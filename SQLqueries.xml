@@ -1,0 +1,40 @@
+<SQLqueries>
+    <feature name="Context 'Explore People'">
+        <query query_name="Get_Incites_Dataset_Updated_Date">select deploy_date from d_datasets
+        </query>
+        <query query_name="Get_WOS_Dataset_Indexed_Date">select extraction_date from d_datasets
+        </query>
+        <query query_name="Query_For_Single_UT_Number">select ISI_LOC from v_article_full where ISI_LOC='%s'
+        </query>
+        <query query_name="Query_For_Multiple_UT_Numbers">select ISI_LOC from v_article_full where ISI_LOC In(%s)
+        </query>
+        <query query_name="verify_Delete_Organization_0001">select ORG_NAME from WP_ORGANIZATION where ORG_ID='%s'
+        </query>
+        <query query_name="verify_Delete_Author_0001">select AUTHOR_FIRST_NAME from WP_AUTHORS where AUTHOR_ID='%s'
+        </query>
+        <query query_name="verify_Delete_Publication_0001">select GROUP_ID from WP_GROUP where ISI_LOC='%s'
+        </query>
+        <query query_name="verify_Delete_Card_0001">select GROUP_ID from WP_GROUP where GROUP_ID='%s'
+        </query>
+        <query query_name="verify_Delete_PubLink_0001">select ISI_LOC from WP_GROUP where ISI_LOC='%s' and GROUP_ID='%s'
+        </query>
+        <query query_name="verify_Delete_OrgLink_0001">select ISI_LOC from WP_GROUP where ORG_ID='%s' and GROUP_ID='%s'
+        </query>
+        <query query_name="verify_Delete_AuthorLink_0001">select ISI_LOC from WP_GROUP where AUTHOR_ID='%s' and GROUP_ID='%s'
+        </query>
+        <query query_name="verify_Delete_OrgParentLink_0001">select * from WP_ORGANIZATION where ORG_ID='%s' and ORG_ID_PARENT='%s'
+        </query>
+        <query query_name="check_presence_of_ORGID">select ORG_ID from WP_ORGANIZATION where ORG_ID='%s'
+        </query>
+        <query query_name="verify_Add_OrgEntity_0001">select ORG_ID from WP_ORGANIZATION where ORG_ID='%s' and ORG_NAME='%s' and ORG_TYPE='%s' and WID='%s' and ORG_ID_PARENT='%s'
+        </query>
+        <query query_name="verify_Add_AuthorLink_0001">select * from WP_GROUP where GROUP_ID='%s' and AUTHOR_ID='%s'
+        </query>
+        <query query_name="verify_Add_OrgParentLink_0001">select * from WP_ORGANIZATION where ORG_ID='%s' and ORG_ID_PARENT='%s'
+        </query>
+        <query query_name="verify_Add_OrgLink_0001">select * from WP_GROUP where ORG_ID='%s' and GROUP_ID='%s'
+        </query>
+        <query query_name="verify_Add_pub_Link_0001">select * from WP_GROUP where ISI_LOC='%s' and GROUP_ID='%s'
+        </query>
+    </feature>
+</SQLqueries>

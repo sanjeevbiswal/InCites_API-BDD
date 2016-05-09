@@ -1,0 +1,73 @@
+<config>
+    <envvars>
+        <envvar id='qa1'>
+            <url></url>
+            <basepath>/incites_ps/v1</basepath>
+        </envvar>
+        <envvar id='qa2'>
+            <!--<url>https://dev.api.apigarden-qa.int.thomsonreuters.com</url>-->
+            <url>https://api.apigarden-qa.int.thomsonreuters.com</url>
+            <basepath>/incites_ps/v1</basepath>
+            <postRequestBasePath>/incites_ps_internal/v1</postRequestBasePath>
+        </envvar>
+        <envvar id='qa3'>
+            <url></url>
+            <basepath>/incites_ps/v1</basepath>
+        </envvar>
+        <!--<envvar id='staging'>-->
+            <!--<url>https://incites.thomsonreuters.com</url>-->
+            <!--<proxyHost>10.225.36.127</proxyHost>-->
+            <!--<ProxyPort>3128</ProxyPort>-->
+            <!--<user>-->
+                <!--<login>alexandr.shelaputin@thomsonreuters.com</login>-->
+                <!--<password>>Welcome123@</password>-->
+            <!--</user>-->
+        <!--</envvar>-->
+    </envvars>
+    <dbServers>
+        <db id="qa1">
+            <host>ip03-scan.int.thomsonreuters.com</host>
+            <service_name>orq835a.int.thomsonreuters.com</service_name>
+            <!--
+                        <host>trs-scan-ql0044.int.thomsonreuters.com</host>
+                        <service_name>orq480a.int.thomsonreuters.com</service_name>
+            -->
+            <user_id>UDM1QA_R2</user_id>
+            <password>incitesdb</password>
+        </db>
+        <db id="qa2">
+            <host>ip03-scan.int.thomsonreuters.com</host>
+            <service_name>orq835a.int.thomsonreuters.com</service_name>
+            <!--
+                        <host>trs-scan-ql0044.int.thomsonreuters.com</host>
+                        <service_name>orq480a.int.thomsonreuters.com</service_name>
+            -->
+            <user_id>UDM1QA_R4</user_id>
+            <password>incitesdb</password>
+        </db>
+        <db id="qa3">
+            <host>ip03-scan.int.thomsonreuters.com</host>
+            <service_name>orq835a.int.thomsonreuters.com</service_name>
+            <!--
+                        <host>trs-scan-ql0044.int.thomsonreuters.com</host>
+                        <service_name>orq480a.int.thomsonreuters.com</service_name>
+            -->
+            <user_id>UDM1QA_R4</user_id>
+            <password>incitesdb</password>
+        </db>
+        <db id="staging">
+            <host>ip01-scan.int.thomsonreuters.com</host>
+            <service_name>orp836a.int.thomsonreuters.com</service_name>
+<!--
+            <host>ip02-scan.int.thomsonreuters.com</host>
+            <service_name>orp835a.int.thomsonreuters.com</service_name>
+-->
+            <!--
+                        <host>trs-scan-ql0044.int.thomsonreuters.com</host>
+                        <service_name>orq480a.int.thomsonreuters.com</service_name>
+            -->
+            <user_id>UDM1PRD_R1</user_id>
+            <password>incitesdb</password>
+        </db>
+    </dbServers>
+</config>

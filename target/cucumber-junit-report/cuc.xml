@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="17.086415">
+<testcase classname="Verifying the ADD Organization Entity API" name="Verification of AddOrgEntity API response against Database" time="17.086415">
+<system-out><![CDATA[Given I have verified the presence of database rows for all the below mentioned entities from the database using the query "check_presence_of_ORGID" and saved the results.passed
+And I got the response from Incites API path "/AddOrgEntity" using "post" request with above mentioned input parameters having values as mentioned above.passed
+And I have extracted the API response and validated it against database using the query"verify_Add_OrgEntity_0001" and stored the results.passed
+Then the API response results should be matched with database results.......passed
+]]></system-out>
+</testcase>
+</testsuite>
