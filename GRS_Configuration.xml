@@ -4,23 +4,7 @@
     <postRequestKey>zBlqwOvGMqJZdC8aufwA0tDuw6piRlki</postRequestKey>
     <url>qa2</url>
 
-    <!--<browser>FF</browser>-->
-    <!--<url>http://incites-prodqa.isiknowledge.com</url>
-    <login>james.sims@thomson.com</login>
-    <password>kXAce76!</password>-->
-    <!--<url>qa2</url>-->
-    <!--<login>incites.qa1@gmail.com</login>-->
-    <!--<password>aaaaaa1!</password>-->
 
-    <!--
-    &lt;!&ndash;only for staging env&ndash;&gt;
-        <login>l.epps@thomsonreuters.com</login>
-        <password>reset~pw2</password>
-    -->
-<!--
-    <login>michael.lelyakov@thomsonreuters.com</login>
-    <password>Passw0rd!</password>
--->
     <backdoor>False</backdoor>
     <profile>WOK_API</profile>
     <task>1</task>
